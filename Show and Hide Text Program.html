@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide Program</title>
+    <style>
+        body {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        h1 { color: orange; }
+
+        #message {
+            font-size: 25px;
+            color: yellow;
+            margin: 30px;
+        }
+
+        button {
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SHOW AND HIDE TEXT</h1>
+
+    <p id="message">HELLO! WELCOME TO JAVASCRIPT.</p>
+
+    <button onclick="showText()">SHOW</button>
+    <button onclick="hideText()">HIDE</button>
+
+    <script>
+        function showText() {
+            document.getElementById("message").style.display = "block";
+        }
+
+        function hideText() {
+            document.getElementById("message").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
